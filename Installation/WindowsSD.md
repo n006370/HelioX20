@@ -1,15 +1,15 @@
 ## Windows Host
 
-This section shows how to install a new operating system to your HiKey using the SD Card method on a Windows host computer.
+This section show how to install an operating system to your Helio X20 using the SD Card method on a Windows host computer.
 ***
 
 - **Step 1**: Prepare MicroSD card
 - **Step 2**: Recall Download Location
 - **Step 3**: Unzip _SD Card Install Image_
 - **Step 4**: Download the Win32DiskImager tool
-- **Step 5**: Use Win32DiskImager tool to flash image onto SD Card
-- **Step 6**: Prepare HiKey with SD card
-- **Step 7**: Install image onto HiKey
+- **Step 5**: Use Win32DiskImager tool to flash image onto SD Card Card
+- **Step 6**: Prepare Helio X20 with SD card
+- **Step 7**: Install image onto Helio X20
 
 ***
 
@@ -18,7 +18,7 @@ This section shows how to install a new operating system to your HiKey using the
 - Ensure data from mircoSD card is backed up
 - Everything on microSD card will be lost by the end of this procedure.
 
-####**Step 3**: Recall Download Location
+####**Step 2**: Recall Download Location
 
 - Locate SD card install file from Downloads page.
 - This file will be needed for the next step.
@@ -50,19 +50,21 @@ This section shows how to install a new operating system to your HiKey using the
 
 - Eject SD Card and proceed to next **Step**
 
-####**Step 6**: Prepare HiKey with SD card
+####**Step 6**: Prepare Helio X20 with SD card
 
-- Make sure HiKey is unplugged from power
-- Connect an HDMI monitor to the HiKey with an HDMI cable, and power on the monitor
-- Plug a USB keyboard and/or mouse into either of the two USB connectors on the HiKey
-- Insert the microSD card into the HiKey
-- Plug power adaptor into HiKey, wait for board to boot up.
+- Make sure Helio X20 is unplugged from power
+- Set S6 switch on Helio X20 to `0-1-0-0`, "SD Boot switch" should be set to "ON".
+   - Please see "1.1 Board Overview" on page 7 from [Helio X20 Hardware Manual]() if you cannot find S6
+- Connect an HDMI monitor to the Helio X20 with an HDMI cable, and power on the monitor
+- Plug a USB keyboard and/or mouse into either of the two USB connectors on the Helio X20
+- Insert the microSD card into the Helio X20
+- Plug power adaptor into Helio X20, wait for board to boot up.
 
-####**Step 7**: Install image onto HiKey
+####**Step 7**: Install image onto Helio X20
 
 <img src="http://i.imgur.com/F18wlgU.png" data-canonical-src="http://i.imgur.com/F18wlgU.png" width="400" height="250"/>
 
-- If **Steps 1 - 6** were followed correctly, the above screen should be visible from your HiKey
+- If **Steps 1 - 6** were followed correctly, the above screen should be visible from your Helio X20
 - Select the image to install and click “Install” (or type “i”). OS will be installed into the eMMC memory
 - This process can take a few minutes to complete
 - Upon completion, “Flashing has completed and OS has installed successfully....” message will appear.
@@ -70,6 +72,7 @@ This section shows how to install a new operating system to your HiKey using the
 Before clicking "OK":
 
 - Remove the SD Card
-- Now click "OK" button and allow HiKey to reboot.
+- Set S6 switch on Helio X20 to `0-0-0-0`, all switches should be set to "OFF"
+- Now click "OK" button and allow Helio X20 to reboot.
 
-**Congratulations! You are now booting your newly installed operating system directly from eMMC on the HiKey!**
+**Congratulations! You are now booting your newly installed operating system directly from eMMC on the Helio X20!**
