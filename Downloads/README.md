@@ -1,21 +1,19 @@
 ## Downloads
 
-The HiKey comes pre-installed with Debian Linux. If you would like to switch the Operating System to AOSP or go back to Debian Linux after using Android, update the existing software images on your board, or unbrick your board, this page provides links to the latest software downloads.
+The Helio X20 comes pre-installed with Android. If you would like to switch the Operating System, update the existing software images on your board, or unbrick your board, this page provides links to the latest software downloads.
 
 ***
 
-Linaro supported operating systems
+### Linaro supported operating systems
 
-- [Debian](Debian.md)
-- [AOSP](AOSP.md)
-- [OpenEmbedded](OpenEmbedded.md)
+< Insert avaialble Linaro supported operating systems here >
 
 ***
 
 ### Third Party Operating Systems
 
-Other operating systems supported on HiKey, offered by partners.
+Other operating systems supported on Helio X20, offered by partners.
 
-- [Snappy Ubuntu Core](http://www.lemaker.org/product-hikey-download-54.html)
+< Insert avaialble 3rd party operating systems here >
 
 ***
