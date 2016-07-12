@@ -1,8 +1,7 @@
 ## Configuration
 
-Execute unique configuraions to customize your HiKey experience
+Execute unique configuraions to customize your Helio X20 experience
 
 ## Helpful Configurations
 
-- [Wireless TI Module (Debian)](WirelessTIModule.md)
-   - Shows steps for configuiring the wireless TI module on your HiKey running Debian
+< Insert custom Helio X20 specific configurations here >
