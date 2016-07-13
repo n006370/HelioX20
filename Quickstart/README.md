@@ -30,7 +30,7 @@ Learn about your HiKey board as well as how to prepare and set up for basic use
 
 # Out of the Box
 
-The following subsections should describe how to get started with the HiKey using the release build shipped with the boards. The HiKey board is ready to use “out of the box” with a preinstalled version of the Debian Linux distribution.
+The following subsections should describe how to get started with the Helio X20 using the release build shipped with the boards. The HiKey board is ready to use “out of the box” with a preinstalled version of the Debian Linux distribution.
 
 ## Updating to a new release or change your operating system
 
