@@ -28,7 +28,7 @@ Learn about your Helio X20 board as well as how to prepare and set up for basic 
 
 # Out of the Box
 
-The following subsections should describe how to get started with the Helio X20 using the release build shipped with the boards. The Helio X20 Development Board is ready to use “out of the box” with a pre-installed version of the Android.
+The following subsections should describe how to get started with the Helio X20 using the release build shipped with the boards. The Helio X20 Development Board is ready to use “out of the box” with a pre-installed version of Android.
 
 To get started you will need a power supply, an HDMI monitor, a USB keyboard and a USB mouse
 
