@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Please take advantage of the many HiKey resources available to you through 96Boards, SeeedStudio, and Coursera
+Please take advantage of the many Helio X20 resources available to you through 96Boards, MediaTek, and Coursera
 
 - [96Boards Helio X20 Forum]()
    - The DragonBoard has its very own 96Boards forum. If you can't find a pre-existing thread that addresses your issue, start your own and let the community help out!
