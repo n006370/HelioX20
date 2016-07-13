@@ -1,6 +1,6 @@
 # Quickstart
 
-Learn about your HiKey board as well as how to prepare and set up for basic use
+Learn about your Helio X20 board as well as how to prepare and set up for basic use
 
 ## Setup - What you will need
 
