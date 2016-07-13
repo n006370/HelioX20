@@ -86,13 +86,9 @@ The Helio X20 Development Board uses an EIAJ-3 DC Jack with an outer diameter 4.
 
 A standard monitor or TV supporting at least 640*480 resolution is required. Interlaced operation is not currently supported. The maximum resolutions currently supported are 1920*1080p. Information on selecting the resolution is provided below. 
 
-### Wireless Network
+## Wireless Network
 
 The Helio X20 Development Board includes built-in 2.4GHz IEEE802.11 a/b/g/n WiFi networking. The board also supports the 5GHz band. To use the wireless LAN for the first time (or to switch wireless networks), you should click on the wireless LAN icon from the shortcut menu or through the Wi-Fi option in Settings application. The right hand fifth orange LED will light up indicates wireless network activity. You could configure the network through UI.
-
-## Wired Network
-
-
 
 ## Bluetooth
 
