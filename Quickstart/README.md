@@ -13,8 +13,6 @@ Learn about your HiKey board as well as how to prepare and set up for basic use
    - All 96Boards are equiped with a full sized HDMI connector
 - Monitor
    - HDMI capable monitor is recommended
-- Jumpers
-   - J15 Header on the HiKey comes with two pin-jumpers
 
 **Optional**
 - MicroSD card with adapter
