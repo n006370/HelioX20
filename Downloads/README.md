@@ -14,6 +14,6 @@ The Helio X20 comes pre-installed with Android. If you would like to switch the 
 
 Other operating systems supported on Helio X20, offered by partners.
 
-< Insert avaialble 3rd party operating systems here >
+- [Android]()
 
 ***
