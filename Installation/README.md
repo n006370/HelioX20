@@ -57,6 +57,7 @@ Go to the [Downloads page](../Downloads/README.md) to get your bootloader, boot 
 Choose host machine
 
 - [Linux](LinuxFastboot.md)
+- [Windows](WindowsFastboot.md)
 
 ***
 
