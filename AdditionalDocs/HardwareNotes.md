@@ -53,14 +53,14 @@ A switch is provided to change between USB 2.0 and USB Hub.
 
 The following are known issues on the current release.
 
-1. Not Yet Supported
-Expansion bus audio. (At present Bluetooth audio and HDMI are supported)
-Some video formats are not decoded in Android, and will not be played with the current release.
+1. **Not Yet Supported**
+   - Expansion bus audio. (At present Bluetooth audio and HDMI are supported)
+   - Some video formats are not decoded in Android, and will not be played with the current release.
 HDMI display sometimes goes off when in AOSP.
-2. Apple Bluetooth Keyboards/Mice/Trackpads do not work.
- This is under the current investigation.
-3. Hot plugging an SD card may not work on some UHS class 1 SD cards on AOSP build.
-4. Display sleep may not always work on AOSP build.
+2. **Apple Bluetooth Keyboards/Mice/Trackpads do not work.**
+   - This is under the current investigation.
+3. **Hot plugging an SD card may not work on some UHS class 1 SD cards on AOSP build.**
+4. **Display sleep may not always work on AOSP build.**
 
 
 ***
