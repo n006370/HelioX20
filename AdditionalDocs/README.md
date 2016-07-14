@@ -7,6 +7,7 @@ Explore what makes your Helio X20 unique by checking out technical specification
 - Hardware Manual ([View]() / [Download]())
 - Schematics ([View]() / [Download]())
 - BOM ([View]() / [Download]())
+- [Hardware Notes](HardwareNotes.md)
 
 ## User Guides
 
