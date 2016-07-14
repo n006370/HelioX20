@@ -5,7 +5,7 @@ Learn about your Helio X20 board as well as how to prepare and set up for basic 
 ## Setup - What you will need
 
 **Need**
-- [Power adapter](PowerAdapter.md)
+- [Power adapter](https://www.96boards.org/products/accessories/power/)
    - 96Boards specifications requires a 6.5V-18V with 2000mA Power adapter
 - [USB Keyboard and Mouse](USBKeyBoardMouse.md)
    - With two USB-A connectors, all 96Boards can be equiped with a full sized keyboard and mouse
