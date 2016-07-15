@@ -17,4 +17,8 @@ A comprehensive guide to using the [Helio X20](http://www.96boards.org/products/
 - [Troubleshooting](Troubleshooting/README.md)
    - From bug reports and current issues, to forum access and other useful resources, we want to help you find answers   
 
+
+Hello how are you
+
+
 ***
