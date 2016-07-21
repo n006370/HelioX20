@@ -19,6 +19,6 @@ A comprehensive guide to using the [Helio X20](http://www.96boards.org/products/
 
 
 Hello how are you
-
+i am fine
 
 ***
