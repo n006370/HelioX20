@@ -1,7 +1,5 @@
 # Helio X20 Development Board Hardware User Manual
 
-***
-
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
