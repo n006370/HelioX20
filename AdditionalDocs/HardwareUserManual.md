@@ -107,12 +107,20 @@ The Helio X20 Development Board is a 96Boards compliant community board based on
    - Operating Temp: -20°C to +45°C
    - RoHS and Reach compliant
 
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
+
 ## What's in the Box
 
 The box contains one Helio X20 Development Board and a quick start guide.
 
 <Insert Helio X20 Board image>
 <Insert Dev Board manual image>
+
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
 
 ## Board Overview
 
@@ -142,9 +150,17 @@ The box contains one Helio X20 Development Board and a quick start guide.
 |    17    |     CON5006     |   GPS Antenna connector                                   |
 |    18    |     SW3205      |   Switch for Auto boot and USB HOST set                   |
 
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
+
 ## System Block Diagram
 
 <Insert System Block Diagram here>
+
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
 
 ## Getting Started
 
@@ -169,6 +185,10 @@ To start the board, follow these simple steps:
 4. Press down the button (marked SW3201), and keep more than 3 seconds, the Android system will start. 
 
 > Note: If set the first pin (AUTO_BOOT_SET) of switch SW3205 to the position ON, the Android system will start automatically when the power supply is plugged into the power outlet.
+
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
 
 ## Component Details
 
@@ -330,6 +350,10 @@ The four user LEDs are surface mount Green in 0603 size located next to the micr
 
 The Helio X20 Development Board also has a additional interface (CON9001)for user debugging. It includes JTAG , UART0 and UART1 interface. The position is reserved, but the component is not mounted in the mass production. The component of CON9001 is AXT640124 produced by Panasonic. This interface should be used with the MTK debug board.
 
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
+
 ## Expansion Connectors
 
 ### Low Speed Expansion Connector
@@ -420,6 +444,10 @@ The Helio X20 Development Board supports these requirements as follows:
  
 SYS_DCIN  Can serves as the board’s main power source or can receive power from the board. 
 
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
+
 ## High Speed Expansion Connector
 
 |  Helio X20 Signals |  96Boards Signals  |  PIN  |  PIN  |  96Boards Signals  |  Helio X20 Signals  |
@@ -495,6 +523,10 @@ SYS_DCIN  Can serves as the board’s main power source or can receive power fro
 
 The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 100K resistor.
 
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
+***
+
 ## Analog Expansion Connector
 
 |  PIN  |  Helio X20 Signals  |    Helio X20 Signals                               |
@@ -515,6 +547,8 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 |   14  |   AU_HSP            |    Headset positive output                         |
 |   15  |   FM_RX_N_6631      |    FM antenna negative output                      |
 |   16  |   AU_HSN            |    Headset negative output                         |
+
+[Back to top](#helio-x20-development-board-hardware-user-manual)
 
 ***
 
@@ -543,6 +577,8 @@ The user of the Helio X20 Development Board should never apply power to the boar
 
 <Insert Table here>
 
+[Back to top](#helio-x20-development-board-hardware-user-manual)
+
 ***
 
 ## Mechanical Specification
@@ -550,3 +586,5 @@ The user of the Helio X20 Development Board should never apply power to the boar
 ### 2D Reference Drawing
 
 <Insert Image here>
+
+[Back to top](#helio-x20-development-board-hardware-user-manual)
