@@ -166,7 +166,7 @@ The box contains one Helio X20 Development Board and a quick start guide.
 
 ## System Block Diagram
 
-<Insert System Block Diagram here>
+<img src="http://i.imgur.com/YPYH7RJ.png" data-canonical-src="http://i.imgur.com/YPYH7RJ.png" width="750" height="480" />
 
 [Back to top](#helio-x20-development-board-hardware-user-manual)
 
