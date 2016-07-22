@@ -490,7 +490,7 @@ SYS_DCIN  Can serves as the board’s main power source or can receive power fro
 |   USB_DM_P1_EXP    |   USB_D-             |   53  |   54  |   CSI1_C+          |   RCP_A                                   |
 |   GND              |   GND                |   55  |   56  |   CSI1_C-          |   RCN_A                                   |
 |   NC               |   HSIC_STR           |   57  |   58  |   GND              |   GND                                     |
-|   NC               |   HSIC_DATA          |   59  |   60  |   RESERVED         |   Pull-up  to VIO18_PMU via 100K resistor |
+|   NC               |   HSIC_DATA          |   59  |   60  |   RESERVED         |   Pull-up  to VIO18_PMU<br>via 100K resistor |
 
 ### MIPI DSI 0 
 
