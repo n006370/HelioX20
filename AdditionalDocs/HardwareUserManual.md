@@ -1,1 +1,47 @@
+# Helio X20 Development Board Hardware User Manual
 
+### Table of Contents
+- Table of Contents
+- Introduction
+- What's in the Box
+- Board Overview
+- Key Components
+- System Block Diagram
+- Getting Started
+   - Prerequisites
+   - Starting the board for the first time
+- Component Details
+   - Processor
+   - PMIC
+   - Memory (DRAM)
+   - Storage
+   - Micro SDHC
+   - Boot ROM
+   - Networking
+   - WiFi
+   - Bluetooth
+   - GPS
+   - HDMI
+   - MIPI-DSI
+   - Camera Interface
+   - USB Ports
+   - USB Host ports
+   - USB Device ports
+   - Audio
+   - DC Power
+   - Power Measurement
+   - External Fan Connection
+   - UART
+   - Buttons
+   - LED Indicators
+   - Additional Functionality
+- Expansion Connectors
+   - Low Speed Expansion Connector
+   - High Speed Expansion Connector
+   - Analog Expansion Connector
+- Power Management Overview
+   - Block Diagram
+   - DC Power Input
+   - Power Source Selection and Sequencing
+   - Voltage Rails
+-Mechanical Specification
