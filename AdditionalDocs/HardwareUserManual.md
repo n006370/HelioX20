@@ -596,6 +596,6 @@ The user of the Helio X20 Development Board should never apply power to the boar
 
 ### 2D Reference Drawing
 
-<Insert Image here>
+<img src="http://i.imgur.com/IdPzJTU.png" data-canonical-src="http://i.imgur.com/IdPzJTU.png" width="750" height="480" />
 
 [Back to top](#helio-x20-development-board-hardware-user-manual)
