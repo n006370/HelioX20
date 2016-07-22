@@ -1,9 +1,5 @@
 # Helio X20 Development Board Hardware User Manual
 
-<img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="250" height="160" />
-<img src="http://i.imgur.com/3EleXMR.png" data-canonical-src="http://i.imgur.com/3EleXMR.png" width="250" height="160" />
-<img src="http://i.imgur.com/p1N2nDt.png" data-canonical-src="http://i.imgur.com/p1N2nDt.png" width="250" height="160" />
-
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
@@ -55,6 +51,10 @@
 ## Introduction
 
 The Helio X20 Development Board is a 96Boards compliant community board based on MediaTek HELIO X20 platform.The following table lists its key features:
+
+<img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="250" height="160" />
+<img src="http://i.imgur.com/3EleXMR.png" data-canonical-src="http://i.imgur.com/3EleXMR.png" width="250" height="160" />
+<img src="http://i.imgur.com/p1N2nDt.png" data-canonical-src="http://i.imgur.com/p1N2nDt.png" width="250" height="160" />
 
 - **Processor**:
    - MediaTek HELIO X20 MT6797
