@@ -1,5 +1,8 @@
 # Helio X20 Development Board Hardware User Manual
 
+<img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="750" height="380" />
+
+
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
