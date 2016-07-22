@@ -131,9 +131,6 @@ The box contains one Helio X20 Development Board and a quick start guide.
 
 ## Board Overview
 
-<img src="http://i.imgur.com/ydQmi5t.png" data-canonical-src="http://i.imgur.com/ydQmi5t.png" width="400" height="270" />
-<img src="http://i.imgur.com/CFM1kTb.png" data-canonical-src="http://i.imgur.com/CFM1kTb.png" width="400" height="270" />
-
 | Position |    Reference    | Description                                               |
 |---------:|:---------------:|:----------------------------------------------------------|
 |    1     |     CON7001     |   Low Speed Expansion Connector                           |
@@ -159,6 +156,9 @@ The box contains one Helio X20 Development Board and a quick start guide.
 |    16    |     ANT5001     |   Bluetooth/WLAN Antenna                                  |
 |    17    |     CON5006     |   GPS Antenna connector                                   |
 |    18    |     SW3205      |   Switch for Auto boot and USB HOST set                   |
+
+<img src="http://i.imgur.com/ydQmi5t.png" data-canonical-src="http://i.imgur.com/ydQmi5t.png" width="400" height="270" />
+<img src="http://i.imgur.com/CFM1kTb.png" data-canonical-src="http://i.imgur.com/CFM1kTb.png" width="400" height="270" />
 
 [Back to top](#helio-x20-development-board-hardware-user-manual)
 
