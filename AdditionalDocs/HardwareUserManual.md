@@ -122,7 +122,7 @@ The Helio X20 Development Board is a 96Boards compliant community board based on
 The box contains one Helio X20 Development Board and a quick start guide.
 
 <img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="500" height="320" />
-<img src="http://i.imgur.com/GZCNzUW.png" data-canonical-src="http://i.imgur.com/GZCNzUW.png" width="550" height="320" />
+<img src="http://i.imgur.com/GZCNzUW.png" data-canonical-src="http://i.imgur.com/GZCNzUW.png" width="500" height="280" />
 
 
 [Back to top](#helio-x20-development-board-hardware-user-manual)
