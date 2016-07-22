@@ -497,13 +497,56 @@ The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 1
 
 ## Analog Expansion Connector
 
-|  Helio X20 Signals |  96Boards Signals  |  PIN  |  PIN  |  96Boards Signals  |  Helio X20 Signals  |
-|:-------------------|:-------------------|:------|------:|-------------------:|--------------------:|
-|                    |                    |   1   |   2   |                    |                     |
-|                    |                    |   3   |   4   |                    |                     |
-|                    |                    |   5   |   6   |                    |                     |
-|                    |                    |   7   |   8   |                    |                     |
-|                    |                    |   9   |   10  |                    |                     |
-|                    |                    |   11  |   12  |                    |                     |
-|                    |                    |   13  |   14  |                    |                     |
-|                    |                    |   15  |   16  |                    |                     |
+|  PIN  |  Helio X20 Signals  |    Helio X20 Signals                               |
+|------:|--------------------:|---------------------------------------------------:|
+|   1   |   AU_LOLP           |    Positive output of line-out buffer from MT6351  |
+|   2   |   AU_LOLN           |    Negative output of line-out buffer from MT6351  |
+|   3   |   MICBIAS0          |    Microphone bias 0 from MT6351                   |
+|   4   |   GND               |    Ground                                          |
+|   5   |   AUDREFN           |    Audio reference ground                          |
+|   6   |   MICBIAS1          |    Microphone bias 1 from MT6351                   |
+|   7   |   AU_VIN0_P         |    Microphone channel 0 positive input             |
+|   8   |   AU_HPR            |    Earphone right channel output                   |
+|   9   |   AU_VIN0_N         |    Microphone channel 0 negative input             |
+|   10  |   AU_HPL            |    Earphone left channel output                    |
+|   11  |   GND               |    Ground                                          |
+|   12  |   ACCDET1           |    Accessory detection 1 input                     |
+|   13  |   FM_ANT            |    FM antenna positive input                       |
+|   14  |   AU_HSP            |    Headset positive output                         |
+|   15  |   FM_RX_N_6631      |    FM antenna negative output                      |
+|   16  |   AU_HSN            |    Headset negative output                         |
+
+***
+
+## Power Management Overview
+
+### Block Diagram
+
+<Insert Block Diagram>
+
+### DC Power Input
+
+- An 8V to 18V power from a dedicated DC jack J901. 
+- An 8V to 18V power from the SYS_DCIN pins on the Low Speed Expansion Connector CON7001. 
+
+> Note: Please refer to the mechanical size of the DC plug below.The inside diameter of the plug is 1.7mm，the outer diameter of the plug is 4.75mm.The positive electrode of the DC plug is in the inside, and the negative pole is outside.
+
+<Insert DC Mate blug schamatic>
+
+### Power Source Selection and Sequencing
+
+The user of the Helio X20 Development Board should never apply power to the board from J901 and the Low Speed Expansion connector at the same time. There is no active or passive mechanism on the Helio X20 Development Board to prioritize one source over the other.
+
+<Insert Image here>
+
+### Voltage Rails
+
+<Insert Table here>
+
+***
+
+## Mechanical Specification
+
+### 2D Reference Drawing
+
+<Insert Image here>
