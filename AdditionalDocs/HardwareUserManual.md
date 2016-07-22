@@ -13,7 +13,7 @@
 - [Component Details](#component-details)
    - [Processor](#processor)
    - [PMIC](#pmic)
-   - [Memory (DRAM)](#)
+   - [Memory (DRAM)](#memory-dram)
    - [Storage](#storage)
    - [Micro SDHC](#micro-sdhc)
    - [Boot ROM](#boot-rom)
