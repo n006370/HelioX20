@@ -3,6 +3,8 @@
 <img src="http://i.imgur.com/Mdjs6Nx.png" data-canonical-src="http://i.imgur.com/Mdjs6Nx.png" width="750" height="480" />
 <br><br><br><br><br><br><br><br><br><br>
 
+***
+
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
