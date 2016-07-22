@@ -50,6 +50,8 @@
    - [Voltage Rails](#voltage-rails)
 - [Mechanical Specification](#mechanical-specification)
 
+***
+
 ## Introduction
 
 The Helio X20 Development Board is a 96Boards compliant community board based on MediaTek HELIO X20 platform.The following table lists its key features:
