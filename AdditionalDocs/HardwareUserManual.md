@@ -357,16 +357,72 @@ The Helio X20 Development Board also has a additional interface (CON9001)for use
 |    SYS_5V           |     +5V           |   37  |   38  |    SYC_DCIN        |    DC_IN            |
 |    GND              |     GND           |   39  |   40  |    GND             |    GND              |
 
+### UART {0/1} 
+
+- The 96Boards specifications calls for a 4-wire UART implementation, UART0 and an optimal second 2-wire UART, UART1 on the Low Speed Expansion Connector. 
+- The Helio X20 Development Board implements UART0 as a 4-wire UART that connects directly to the MT6797 SoC. These signals are driven at 1.8V. 
+- The Helio X20 Development Board implements UART1 as a 2-wire UART that connects directly to the MT6797 SoC. These signals are driven at 1.8V. 
+
+### I2C {0/1} 
+
+- The 96Boards specification calls for two I2C interfaces to be implemented on the Low Speed Expansion Connector. 
+- The Helio X20 Development Board implements both interfaces named I2C4 and I2C5. They connect directly to the MT6797 SoC. Each of the I2C lines is pulled up to VIO18_PMU via 4.7K resistor.
+
+### GPIO {A-L} 
+
+The 96Boards specification calls for 12 GPIO lines to be implemented on the Low Speed Expansion Connector. Some of these GPIOs may support alternate functions for DSI/CSI control 
+
+The 410c board implements this requirement. All GPIOs are routed to the MT6797 SoC. 
+
+- GPIO A -Connects to EINT16 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal.
+- GPIO B -Connects to EINT5 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal. 
+- GPIO C -Connects to EINT4 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal. 
+- GPIO D -Connects to EINT3 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal.  
+- GPIO E -Connects to EINT2 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal. 
+- GPIO F -Connects to EINT1 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal. 
+- GPIO G -Connects to DSI_TE of MT6797 SoC, can serves as DSI_TE or GPIO179. It is a 1.8V signal. 
+- GPIO H -Connects to LCM_RST of MT6797 SoC, can serves as LCM_RST or GPIO180. It is a 1.8V signal. 
+- GPIO I -Connects to CAM_RST0 of MT6797 SoC, can serves as CAM_RST0 or GPIO32. It is a 1.8V signal. 
+- GPIO J -Connects to CAM_PDN0 of MT6797 SoC, can serves as CAM_PDN0 or GPIO28. It is a 1.8V signal. 
+- GPIO K -Connects to CAM_RST1 of MT6797 SoC, can serves as CAM_RST1 or GPIO33. It is a 1.8V signal. 
+- GPIO L -Connects to CAM_PDN1 of MT6797 SoC, can serves as CAM_PDN1 or GPIO29. It is a 1.8V signal. 
+
+### SPI 0 
+
+- The 96Boards specification calls for one SPI bus master to be provided on the Low Speed Expansion Connector. 
+- The Helio X20 Development Board implements a full SPI master with 4 wires, CLK, CS, MOSI and MISO. The signals are connected directly to the MT6797 SoC and driven at 1.8V. 
+
+### PCM/I2S
+
+- The 96Boards specification calls for one PCM/I2S bus to be provided on the Low Speed Expansion Connector. The CLK, FS and DO signals are required while the DI is optional. 
+- The Helio X20 Development Board implements a PCM/I2S interface with 4 wires, CLK, FS, DO and DI. The signals are connected directly to the MT6797 SoC and driven at 1.8V.  
+
+### Power and Reset 
+
+The 96Boards specification calls for a signal on the Low Speed Expansion Connector that can power on/off the board and a signal that serves as a board reset signal. 
+
+The Helio X20 Development Board routes the PWR_BTN_N (named PWRKEY on schematic) signal to the PWRKEY pin of the PMIC MT6351. This signal is driven by SW3201 as well, the on-board power on push-button switch.  A mezzanine implementation of this signals should not drive it with any voltage, the only allowed operation is to force it to GND to start the board from a sleep mode. 
+
+The Helio X20 Development Board routes the RST_BTN_N (named SYSRSTB on schematic) signal to the SYSRSTB pin of the PMIC MT6351.
 
 
+### Power Supplies 
 
+The 96Boards specification calls for three power rails to be present on the Low Speed Expansion Connector: 
+- +1.8V  Max of 100mA 
+- +5V  Provide a minimum of 5W of power (1A). 
 
+SYS_DCIN  8-18V input with enough current to support all the board functions or the output DCIN from on-board DC Connector able to provide a minimum of 7W of power. 
 
+The Helio X20 Development Board supports these requirements as follows: 
+- +1.8V  Driven by PMIC MT6351 up to  1000mA.  It is the system IO power (VIO18_PMU), and it can supply power up to 200mA to the Low Speed Expansion Connector.
+- +5V  Driven by a 6A DC-DC buck converter (U901). It also provides the VBUS power to the two USB host connectors (CON6401, CON6402) and the HDMI 5V power to the HDMI connector (CON6501).The remaining capacity provides a max current of 2A to the Low Speed Expansion Connector, for a total of 10W which meets the 96Boards requirements.
+ 
+SYS_DCIN  Can serves as the board’s main power source or can receive power from the board. 
 
+## High Speed Expansion Connector
 
-
-
-|  96Boards Signals  |  Helio X20 Signals |  PIN  |  PIN  |  96Boards Signals  |  Helio X20 Signals  |
+|  Helio X20 Signals |  96Boards Signals  |  PIN  |  PIN  |  96Boards Signals  |  Helio X20 Signals  |
 |:-------------------|:-------------------|:------|------:|-------------------:|--------------------:|
 |                    |                    |   1   |   2   |                    |                     |
 |                    |                    |   3   |   4   |                    |                     |
@@ -388,3 +444,66 @@ The Helio X20 Development Board also has a additional interface (CON9001)for use
 |                    |                    |   35  |   36  |                    |                     |
 |                    |                    |   37  |   38  |                    |                     |
 |                    |                    |   39  |   40  |                    |                     |
+|                    |                    |   41  |   42  |                    |                     |
+|                    |                    |   43  |   44  |                    |                     |
+|                    |                    |   45  |   46  |                    |                     |
+|                    |                    |   47  |   48  |                    |                     |
+|                    |                    |   49  |   50  |                    |                     |
+|                    |                    |   51  |   52  |                    |                     |
+|                    |                    |   53  |   54  |                    |                     |
+|                    |                    |   55  |   56  |                    |                     |
+|                    |                    |   57  |   58  |                    |                     |
+|                    |                    |   59  |   60  |                    |                     |
+
+### MIPI DSI 0 
+
+- The 96Boards specification calls for a MIPI-DSI to be present on the High Speed Expansion Connector. A minimum of one lane is required and up to four lanes can be accommodated on the connector. 
+- The Helio X20 Development Board implementation supports a full four lane (1.2Gbps/lane) MIPI-DSI interface that is routed to the High Speed Expansion Connector. The MIPI-DSI signals are directly connected to DSI-0 of MT6797. 
+
+### MIPI CSI {0/1} 
+
+- The 96Boards specification calls for two MIPI-CSI interfaces to be present on the High Speed Expansion Connector. Both interfaces are optional. CSI0 interface can be up to four lanes while CSI1 is up to two lanes. 
+- The Helio X20 Development Board implementation supports a full four lane MIPI-CSI interface on CSI0 and two lanes of MIPI-CSI on CSI1. All MIPI-CSI signals are routed directly to/from the MT6797SoC.  CSI0 can support up to 25M@30fps and CSI1 can support up to 8M@30fps. The max data rate of each lane is 2.5Gbps.
+
+
+### I2C {2/3} 
+
+- The 96Boards specification calls for two I2C interfaces to be present on the High Speed Expansion Connector. Both interfaces are optional unless a MIPI-CSI interface has been implemented. Then an I2C interface shall be implemented. 
+- The Helio X20 Development Board implementation supports two MIPI-CSI interfaces and therefore must support two I2C interfaces. For MIPI-CSI0 the companion I2C2 is routed directly from the MT6797SoC. For MIPI-CSI1, the companion I2C is I2C3. Each of the I2C lines is pulled up to VIO18_PMU via 4.7K resistor.
+
+### SD/SPI 
+
+- The 96Boards specification calls for an SD interface or a SPI port to be part of the High Speed Expansion Connector. 
+- The Helio X20 Development Board implements a full SPI master with 4 wires (96Boards SPI Configuration), CLK, CS, MOSI and MISO. All the signals are connected directly to the MT6797 SoC. These signals are driven at 1.8V. 
+
+### Clocks 
+
+- The 96Boards specification calls for one or two programmable clock interfaces to be provided on the High Speed Expansion Connector. These clocks may have a secondary function of being CSI0_MCLK and CSI1_MCLK. If these clocks can’t be supported by the SoC than an alternative GPIO or No-Connect is allowed by the specifications. 
+- The Helio X20 Development Board implements two CSI clocks which are connected directly to the MT6797 SoC. These signals are driven at 1.8V. 
+
+### USB
+
+- The 96Boards specification calls for a USB Data line interface to be present on the High Speed Expansion Connector. 
+- The Helio X20 Development Board implements this requirement by routing USB channel 3 from the USB HUB to the High Speed Expansion Connector. 
+
+### HSIC 
+
+- The 96Boards specification calls for an optional MIPI-HSIC interface to be present on the High Speed Expansion Connector. 
+- The Helio X20 Development Board implementation doesn’t support this optional requirement. 
+
+### Reserved 
+
+The pin 60 of the High Speed Expansion Connector is pulled up to VIO18_PMU via 100K resistor.
+
+## Analog Expansion Connector
+
+|  Helio X20 Signals |  96Boards Signals  |  PIN  |  PIN  |  96Boards Signals  |  Helio X20 Signals  |
+|:-------------------|:-------------------|:------|------:|-------------------:|--------------------:|
+|                    |                    |   1   |   2   |                    |                     |
+|                    |                    |   3   |   4   |                    |                     |
+|                    |                    |   5   |   6   |                    |                     |
+|                    |                    |   7   |   8   |                    |                     |
+|                    |                    |   9   |   10  |                    |                     |
+|                    |                    |   11  |   12  |                    |                     |
+|                    |                    |   13  |   14  |                    |                     |
+|                    |                    |   15  |   16  |                    |                     |
