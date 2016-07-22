@@ -131,6 +131,9 @@ The box contains one Helio X20 Development Board and a quick start guide.
 
 ## Board Overview
 
+<img src="http://i.imgur.com/ydQmi5t.png" data-canonical-src="http://i.imgur.com/ydQmi5t.png" width="400" height="270" />
+<img src="http://i.imgur.com/CFM1kTb.png" data-canonical-src="http://i.imgur.com/CFM1kTb.png" width="400" height="270" />
+
 | Position |    Reference    | Description                                               |
 |---------:|:---------------:|:----------------------------------------------------------|
 |    1     |     CON7001     |   Low Speed Expansion Connector                           |
