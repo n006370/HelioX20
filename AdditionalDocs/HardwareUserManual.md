@@ -3,7 +3,7 @@
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-- [What's in the Box](#)
+- [What's in the Box](#whats-in-the-box)
 - [Board Overview](#board-overview)
 - [Key Components](#key-components)
 - [System Block Diagram](#system-block-diagram)
