@@ -207,9 +207,9 @@ MT6797 is a highly integrated application processor which uses an industry-leadi
 
 ### PMIC
 
-There are a PMIC and two dedicated DC - DC converters for MT6797 platform.
-MT6351 is a power management system chip, containing 8 buck converters and 31 LDOs. 
-DA9214 is a 4-phase high efficiency buck converter. It is applied to offer the kernel power of APU.
+- There are a PMIC and two dedicated DC - DC converters for MT6797 platform.
+- MT6351 is a power management system chip, containing 8 buck converters and 31 LDOs. 
+- DA9214 is a 4-phase high efficiency buck converter. It is applied to offer the kernel power of APU.
 
 FAN53555 is high efficiency step-down switching regulator. It is applied to offer the DVDD power of GPU.
 
@@ -252,18 +252,18 @@ The GPS implementation is based on MTK connectivity chip MT6631 (U5003) supporti
 
 ### HDMI 
 
-The 96Boards specification calls for an HDMI port to be present on the board. The MT6797 doesn’t include a built-in HDMI interface. The Helio X20 Development Board deploys the built-in DPI interface as the source for the HDMI output. A peripheral Bridge IC (U6502, MT8193) performs this task and it supports a resolution from 480i to 1080p at 30Hz. 
+- The 96Boards specification calls for an HDMI port to be present on the board. The MT6797 doesn’t include a built-in HDMI interface.
+- The Helio X20 Development Board deploys the built-in DPI interface as the source for the HDMI output. A peripheral Bridge IC (U6502, MT8193) performs this task and it supports a resolution from 480i to 1080p at 30Hz. 
 
 ### MIPI-DSI
 
-The 96Boards specification calls for a MIPI-DSI implementation via the High Speed Expansion Connector. 
-
-The Helio X20 Development Board implements a 4-lane MIPI_DSI interface meeting this requirement. It can support up to FHD(1080p@60fps). The Helio X20 Development Board routes the MIPI_DSI interface signals to the DSI-0 interface of the MT6797.
+- The 96Boards specification calls for a MIPI-DSI implementation via the High Speed Expansion Connector. 
+- The Helio X20 Development Board implements a 4-lane MIPI_DSI interface meeting this requirement. It can support up to FHD(1080p@60fps). The Helio X20 Development Board routes the MIPI_DSI interface signals to the DSI-0 interface of the MT6797.
 
 ### Camera Interface
 
-The 96Boards specification calls for two camera interfaces.
-The Helio X20 Development Board supports two camera interfaces, one with a 4-lane MIPI_CSI interface and one with 2-lane MIPI_CSI interface, meeting this requirement. The 4-lane MIPI_CSI interface can support 25M camera and the 2-lane MIPI_CSI interface can support 8M camera. 
+- The 96Boards specification calls for two camera interfaces.
+- The Helio X20 Development Board supports two camera interfaces, one with a 4-lane MIPI_CSI interface and one with 2-lane MIPI_CSI interface, meeting this requirement. The 4-lane MIPI_CSI interface can support 25M camera and the 2-lane MIPI_CSI interface can support 8M camera. 
 
 ### USB Ports
 
@@ -407,7 +407,7 @@ The Helio X20 Development Board also has a additional interface (CON9001)for use
 
 The 96Boards specification calls for 12 GPIO lines to be implemented on the Low Speed Expansion Connector. Some of these GPIOs may support alternate functions for DSI/CSI control 
 
-The 410c board implements this requirement. All GPIOs are routed to the MT6797 SoC. 
+The Helio X20 board implements this requirement. All GPIOs are routed to the MT6797 SoC. 
 
 - GPIO A -Connects to EINT16 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal.
 - GPIO B -Connects to EINT5 of MT6797 SoC, can serves as external interrupt supporting the 96Boards requirements to create a wake-up event for the SoC. It is a 1.8V signal. 
@@ -434,11 +434,9 @@ The 410c board implements this requirement. All GPIOs are routed to the MT6797 S
 
 ### Power and Reset 
 
-The 96Boards specification calls for a signal on the Low Speed Expansion Connector that can power on/off the board and a signal that serves as a board reset signal. 
-
-The Helio X20 Development Board routes the PWR_BTN_N (named PWRKEY on schematic) signal to the PWRKEY pin of the PMIC MT6351. This signal is driven by SW3201 as well, the on-board power on push-button switch.  A mezzanine implementation of this signals should not drive it with any voltage, the only allowed operation is to force it to GND to start the board from a sleep mode. 
-
-The Helio X20 Development Board routes the RST_BTN_N (named SYSRSTB on schematic) signal to the SYSRSTB pin of the PMIC MT6351.
+- The 96Boards specification calls for a signal on the Low Speed Expansion Connector that can power on/off the board and a signal that serves as a board reset signal. 
+- The Helio X20 Development Board routes the PWR_BTN_N (named PWRKEY on schematic) signal to the PWRKEY pin of the PMIC MT6351. This signal is driven by SW3201 as well, the on-board power on push-button switch.  A mezzanine implementation of this signals should not drive it with any voltage, the only allowed operation is to force it to GND to start the board from a sleep mode. 
+- The Helio X20 Development Board routes the RST_BTN_N (named SYSRSTB on schematic) signal to the SYSRSTB pin of the PMIC MT6351.
 
 
 ### Power Supplies 
@@ -461,38 +459,38 @@ SYS_DCIN  Can serves as the board’s main power source or can receive power fro
 
 ## High Speed Expansion Connector
 
-|  Helio X20 Signals |  96Boards Signals  |  PIN  |  PIN  |  96Boards Signals  |  Helio X20 Signals  |
-|:-------------------|:-------------------|:------|------:|-------------------:|--------------------:|
-|                    |                    |   1   |   2   |                    |                     |
-|                    |                    |   3   |   4   |                    |                     |
-|                    |                    |   5   |   6   |                    |                     |
-|                    |                    |   7   |   8   |                    |                     |
-|                    |                    |   9   |   10  |                    |                     |
-|                    |                    |   11  |   12  |                    |                     |
-|                    |                    |   13  |   14  |                    |                     |
-|                    |                    |   15  |   16  |                    |                     |
-|                    |                    |   17  |   18  |                    |                     |
-|                    |                    |   19  |   20  |                    |                     |
-|                    |                    |   21  |   22  |                    |                     |
-|                    |                    |   23  |   24  |                    |                     |
-|                    |                    |   25  |   26  |                    |                     |
-|                    |                    |   27  |   28  |                    |                     |
-|                    |                    |   29  |   30  |                    |                     |
-|                    |                    |   31  |   32  |                    |                     |
-|                    |                    |   33  |   34  |                    |                     |
-|                    |                    |   35  |   36  |                    |                     |
-|                    |                    |   37  |   38  |                    |                     |
-|                    |                    |   39  |   40  |                    |                     |
-|                    |                    |   41  |   42  |                    |                     |
-|                    |                    |   43  |   44  |                    |                     |
-|                    |                    |   45  |   46  |                    |                     |
-|                    |                    |   47  |   48  |                    |                     |
-|                    |                    |   49  |   50  |                    |                     |
-|                    |                    |   51  |   52  |                    |                     |
-|                    |                    |   53  |   54  |                    |                     |
-|                    |                    |   55  |   56  |                    |                     |
-|                    |                    |   57  |   58  |                    |                     |
-|                    |                    |   59  |   60  |                    |                     |
+|  Helio X20 Signals |   96Boards Signals   |  PIN  |  PIN  |  96Boards Signals  |             Helio X20 Signals             |
+|:-------------------|:---------------------|:------|------:|-------------------:|------------------------------------------:|
+|   SPI1_MO          |   SD_DAT0/SPI1_DOUT  |   1   |   2   |   CSI0_C+          |   RCP                                     |
+|   NC               |   SD_DAT1            |   3   |   4   |   CSI0_C-          |   RCN                                     |
+|   NC               |   SD_DAT2            |   5   |   6   |   GND              |   GND                                     |
+|   SPI1_CS          |   SD_DAT3/SPI1_CS    |   7   |   8   |   CSI0_D0+         |   RDP0                                    |
+|   SPI1_CK          |   SD_SCLK/SPI1_SCLK  |   9   |   10  |   CSI0_D0-         |   RDN0                                    |
+|   SPI1_MI          |   SD_CMD/SPI1_DIN    |   11  |   12  |   GND              |   GND                                     |
+|   GND              |   GND                |   13  |   14  |   CSI0_D1+         |   RDP1                                    |
+|   CAM_CLK0         |   CLK0/CSI0_MCLK     |   15  |   16  |   CCSI0_D1-        |   RDN1                                    |
+|   CAM_CLK1         |   CLK1/CSI1_MCLK     |   17  |   18  |   GND              |   GND                                     |
+|   GND              |   GND                |   19  |   20  |   CSI0_D2+         |   RDP2                                    |
+|   TCP              |   DSI_CLK+           |   21  |   22  |   CSI0_D2-         |   RDN2                                    |
+|   TCN              |   DSI_CLK-           |   23  |   24  |   GND              |   GND                                     |
+|   GND              |   GND                |   25  |   26  |   CSI0_D3+         |   RDP3                                    |
+|   TDP0             |   DSI_D0+            |   27  |   28  |   CSI0_D3-         |   RDN3                                    |
+|   TDN0             |   DSI_D0-            |   29  |   30  |   GND              |   GND                                     |
+|   GND              |   GND                |   31  |   32  |   I2C2_SCL         |   SCL2                                    |
+|   TDP1             |   DSI_D1+            |   33  |   34  |   I2C2_SCL         |   SDA2                                    |
+|   TDN1             |   DSI_D1-            |   35  |   36  |   I2C3_SDA         |   SCL3                                    |
+|   GND              |   GND                |   37  |   38  |   I2C3_SDA         |   SDA3                                    |
+|   TDP2             |   DSI_D2+            |   39  |   40  |   GND              |   GND                                     |
+|   TDN2             |   DSI_D2-            |   41  |   42  |   CSI1_D0+         |   RDP0_A                                  |
+|   GND              |   GND                |   43  |   44  |   CSI1_D0-         |   RDN0_A                                  |
+|   TDP3             |   DSI_D3+            |   45  |   46  |   GND              |   GND                                     |
+|   TDN3             |   DSI_D3-            |   47  |   48  |   CSI1_D1+         |   RDP1_A                                  |
+|   GND              |   GND                |   49  |   50  |   CSI1_D1-         |   RDN1_A                                  |
+|   USB_DP_P1_EXP    |   USB_D+             |   51  |   52  |   GND              |   GND                                     |
+|   USB_DM_P1_EXP    |   USB_D-             |   53  |   54  |   CSI1_C+          |   RCP_A                                   |
+|   GND              |   GND                |   55  |   56  |   CSI1_C-          |   RCN_A                                   |
+|   NC               |   HSIC_STR           |   57  |   58  |   GND              |   GND                                     |
+|   NC               |   HSIC_DATA          |   59  |   60  |   RESERVED         |   Pull-up  to VIO18_PMU via 100K resistor |
 
 ### MIPI DSI 0 
 
