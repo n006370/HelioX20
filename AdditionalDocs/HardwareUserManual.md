@@ -129,7 +129,7 @@ The box contains one Helio X20 Development Board and a quick start guide.
 |    9     |     CON6501     |   HDMI Type A Port                                        |
 |    10    |     CON7101     |   High Speed Connector                                    |
 |    11    |     CON6403     |   Micro USB Type B Connecto                               |
-|    12    | LED3201-LED3204 |   LED3201,LED3202,LED3203,LED3204 can be defined by user  |
+|    12    | LED3201-LED3204 |   Can be defined by user                                  |
 |          |     LED3205     |   LED3205 is WLAN LED                                     |
 |          |     LED3206     |   LED3206 is Bluetooth LED                                |
 |    13    |     CON6402     |   USB Host2 Connector                                     |
@@ -142,3 +142,35 @@ The box contains one Helio X20 Development Board and a quick start guide.
 |    17    |     CON5006     |   GPS Antenna connector                                   |
 |    18    |     SW3205      |   Switch for Auto boot and USB HOST set                   |
 
+## System Block Diagram
+
+<Insert System Block Diagram here>
+
+## Getting Started
+
+#### Prerequisites
+
+Before you power up your Helio X20 Development Board for the first time you will need the following:
+
+- Helio X20 Development Board.
+- A 96Boards compliant power supply (sold separately ).
+- A HDMI or DVI LCD Monitor that supports a resolution of 1080P/60Hz.
+- HDMI-HDMI cable or HDMI-DVI cable to connect the board to the Monitor.
+- A computer keyboard with USB interface.
+- A computer mouse with USB interface.
+
+#### Starting the board for the first time 
+
+To start the board, follow these simple steps: 
+
+1. Connect the HDMI cable to the Helio X20 Development Board connector (marked CON6501) and to the LCD Monitor. 
+2. Set the the third pin (USB HOST SET) of switch SW3205 to the position ON and connect the keyboard to USB connector marked CON6402 and the mouse to the USB connector marked CON6401. (It doesn’t matter which order you connect them in. ) 
+3. Plug the power supply into the power outlet.
+4. Press down the button (marked SW3201), and keep more than 3 seconds, the Android system will start. 
+
+> Note: If set the first pin (AUTO_BOOT_SET) of switch SW3205 to the position ON, the Android system will start automatically when the power supply is plugged into the power outlet.
+
+## Component Details
+
+#### Processor
+MT6797 is a highly integrated application processor which uses an industry-leading Tri-Cluster Deca-Core CPU Architecture. The chip integrates Dual-core ARM@Cortex-A72 MPCoreTM  operating at up to 2.3GHz, Quad-core ARM@Cortex-A53 MPCoreTM operating at up to 1.85GHz, Quad-core ARM@Cortex-A53 MPCoreTM  operating at up to 1.4GHz, Quad-core Mail T880 operating at up to 700MHz  and  an ARM@Cortex-R4 MCU . In addition, an extensive set of interfaces and connectivity peripherals are included to interface to cameras, touch-screen displays and MMC/SD cards.MT6797 also embodies wireless communication device, including WLAN, Bluetooth and GPS.
