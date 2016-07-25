@@ -9,18 +9,8 @@ Higher performance may be obtained by using forced air (fan) cooling on the Heli
 
 ### HDMI Port
 
-The HDMI port on Helio X20 Development Board supports TVs and Monitors with an HDMI interface at display resolutions of 1920*1080 (or 2560*1600) pixels down to 640*480 pixels. Note that interlaced display modes are not currently supported. The mobile SoC used on the Helio X20 Development Board does not have sufficiently flexible clocking arrangements to support all possible HDMI timings specified by monitors. 
-
+The HDMI port on Helio X20 Development Board supports TVs and Monitors with an HDMI interface at display resolutions of 1920*1080 pixels down to 640*480 pixels. Note that interlaceddisplay modes are not currently supported. The mobile SoC used on the Helio X20 Development Board does not have sufficiently flexible clocking arrangements to support allpossible HDMI timings specified by monitors. 
 Note also that these modes are preferred and will be tried (in this order) first if they exist in EDID
-
-Resolution | Ratio | Usually on
----------- | ----- | ----------
-2560*1600 | 16:10 | Monitor
-1920x1080 | 16:9 | TV
-1680x1050 | 16:10 | Monitor
-1280x1024 | 25:16 | Monitor
-1280x720 | 16:9 | TV
-800x600	| 4:3 | TV
 
 ### USB Ports 
 
@@ -45,9 +35,8 @@ A switch is provided to change between USB 2.0 and USB Hub.
 
 ### UART Ports 
 
-???
+It support a UART Port used for debug, and the Baud Rate should set to 921600. 
 
-***
 
 ## Known Issues 
 
