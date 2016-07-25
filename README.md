@@ -6,8 +6,6 @@ A comprehensive guide to using the [Helio X20](http://www.96boards.org/products/
 
 - [Quickstart](Quickstart/README.md)
    - Learn about your Helio X20 board, how to prepare and set up for basic use
-- [Installation](Installation/README.md)
-   - Choose and install an operating system on your Helio X20
 - [Downloads](Downloads/README.md)
    - Already familiar with your 96Boards? Skip the board bring up sections and go straight to your download!
 - [Configuration](Configuration/README.md)
@@ -17,8 +15,5 @@ A comprehensive guide to using the [Helio X20](http://www.96boards.org/products/
 - [Troubleshooting](Troubleshooting/README.md)
    - From bug reports and current issues, to forum access and other useful resources, we want to help you find answers   
 
-
-Hello how are you
-i am fine
 
 ***

@@ -12,5 +12,4 @@ Explore what makes your Helio X20 unique by checking out technical specification
 ## User Guides
 
 - Getting Started ([View]() / [Download]())
-- User Manual ([View]() / [Download]())
 - Software Manual ([View]() / [Download]())
