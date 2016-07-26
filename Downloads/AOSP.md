@@ -12,19 +12,22 @@ Currenty not available...
 
 Please provide Download links for the various images, Example: [Text for Link](http://link-goes-here.com)
 
-## Fastboot files
+## Special Images
 
 |   Bootloader      |                        |
 |:------------------|:-----------------------|
-| Comp 1            | [Download]()           |
-| Comp 2            | [Download]()           | 
-| Comp 3            | [Download]()           | 
-| Comp 4            | [Download]()           | 
-| Comp 5            | [Download]()           | 
+| lk.bin            | [Download]()           |
+| logo.bin            | [Download]()           | 
+| preloader_amt6797_64_open.bin            | [Download]()           | 
+| trustzone.bin            | [Download]()           | 
+| MT6797_Android_scatter.txt            | [Download]()           | 
 
+## Normal Images
 |   Latest build files    |    [Build Folder]()    |
 |:------------------------|:-----------------------|
-| recovery.img            | [Download]()           |
+| PGPT            | [Download]()           |
+| preloader_amt6797_64_open.bin            | [Download]()           |
+| recovery.img         | [Download]()           |
 | tinysys-scp.bin         | [Download]()           |
 | lk.bin                  | [Download]()           |
 | boot.img                | [Download]()           |
