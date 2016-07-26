@@ -13,13 +13,11 @@ The HDMI port on Helio X20 Development Board supports TVs and Monitors with an H
 
 Note also that these modes are preferred and will be tried (in this order) first if they exist in EDID:
 
-|| Resolution  || Ratio || Usually on ||
-
-|| 1920*1080   || 16：9 || TV         ||
-
-|| 1280*720    || 16：9 || TV         ||
-
-|| 720*480     || 4：3  || Monitor    ||
+|   Resolution    |    Ratio    |    Usually on    |
+|:------------------------|:-----------------------|:-----------------------|
+| 1920*1080            | 16:9           | TV           |           
+| 1280*720            | 16:9           | TV           |           
+| 720*480         | 4:3           | Monitor           |           
 
 ### USB Ports 
 
@@ -32,8 +30,8 @@ Please read the document Helio X20 Development Board-Hardware Manual.pdf for mor
    - The microUSB OTG port may be used (in host or slave mode) or the Type A host ports may be used. They may not both be used simultaneously. If a cable is inserted into the OTG port then the Type A ports and the expansion bus port will be automatically disabled.
    - For the microUSB OTG port a single Low Speed (1.5Mbit/sec), Full Speed (12Mbit/sec) or High Speed (480Mbit/sec) device is supported.
    - For the USB host ports all attached USB devices must be one of the following two options:
-     Low Speed (1.5Mbit/sec) and Full Speed (12Mbit/sec) devices, or
-     High Speed devices (480Mbit/sec)
+     - Low Speed (1.5Mbit/sec) and Full Speed (12Mbit/sec) devices, or
+     - High Speed devices (480Mbit/sec)
 
 If a mixture of High Speed and Low/Full speed devices are attached the devices will not operate correctly. This also applies if any hubs are attached to the ports.
 The reason for this limitation is that USB 2.0 split transfers are not supported by the mobile-targeted SoC hardware USB implementation.
