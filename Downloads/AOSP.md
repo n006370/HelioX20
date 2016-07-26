@@ -10,6 +10,8 @@ Currenty not available...
 
 ***
 
+Please provide Download links for the various images, Example: [Text for Link](http://link-goes-here.com)
+
 ## Fastboot files
 
 |   Bootloader      |                        |

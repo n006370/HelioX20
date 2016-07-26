@@ -35,8 +35,7 @@ A switch is provided to change between USB 2.0 and USB Hub.
 
 ### UART Ports 
 
-It support a UART Port used for debug, and the Baud Rate should set to 921600. 
-
+Helio X20 supports a UART Port used for debugging, the Baud Rate for this interface should be set to 921600. 
 
 ## Known Issues 
 

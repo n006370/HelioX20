@@ -34,9 +34,7 @@ Go to the [Downloads page](../Downloads/README.md) to get your SD card image.
 
 Choose host machine
 
-- [Linux](LinuxSD.md)
-- [Mac](MacSD.md)
-- [Windows](WindowsSD.md)
+###### This method is not available for the Helio X20
 
 ***
 

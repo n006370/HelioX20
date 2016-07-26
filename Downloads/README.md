@@ -6,7 +6,7 @@ The Helio X20 comes pre-installed with Android. If you would like to switch the 
 
 ### Linaro supported operating systems
 
-- [Debian](Debian.md)
+###### Currently unavailable
 
 ***
 
