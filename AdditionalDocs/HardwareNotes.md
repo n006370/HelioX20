@@ -10,21 +10,31 @@ Higher performance may be obtained by using forced air (fan) cooling on the Heli
 ### HDMI Port
 
 The HDMI port on Helio X20 Development Board supports TVs and Monitors with an HDMI interface at display resolutions of 1920*1080 pixels down to 640*480 pixels. Note that interlaceddisplay modes are not currently supported. The mobile SoC used on the Helio X20 Development Board does not have sufficiently flexible clocking arrangements to support allpossible HDMI timings specified by monitors. 
-Note also that these modes are preferred and will be tried (in this order) first if they exist in EDID
+
+Note also that these modes are preferred and will be tried (in this order) first if they exist in EDID:
+| Resolution  | Ratio | Usually on |
+
+| ------------- | ------------- |
+
+| 1920*1080  | 16：9  | TV  |
+
+| 1280*720   | 16：9  | TV  |
+
+| 720*480    | 4：3   | Monitor |
 
 ### USB Ports 
 
 There are multiple USB ports on the Helio X20 Development Board:
-One microUSB OTG port on the front edge of the board
-Two Type A USB 2.0 host ports on the front edge of the board
-One USB 2.0 host port on the high-speed expansion bus
+   - One microUSB OTG port on the front edge of the board
+   - Two Type A USB 2.0 host ports on the front edge of the board
+   - One USB 2.0 host port on the high-speed expansion bus
 
 Please read the document Helio X20 Development Board-Hardware Manual.pdf for more information on the following hardware restrictions:
-The microUSB OTG port may be used (in host or slave mode) or the Type A host ports may be used. They may not both be used simultaneously. If a cable is inserted into the OTG port then the Type A ports and the expansion bus port will be automatically disabled.
-For the microUSB OTG port a single Low Speed (1.5Mbit/sec), Full Speed (12Mbit/sec) or High Speed (480Mbit/sec) device is supported.
-For the USB host ports all attached USB devices must be one of the following two options:
-Low Speed (1.5Mbit/sec) and Full Speed (12Mbit/sec) devices, or
-High Speed devices (480Mbit/sec)
+   - The microUSB OTG port may be used (in host or slave mode) or the Type A host ports may be used. They may not both be used simultaneously. If a cable is inserted into the OTG port then the Type A ports and the expansion bus port will be automatically disabled.
+   - For the microUSB OTG port a single Low Speed (1.5Mbit/sec), Full Speed (12Mbit/sec) or High Speed (480Mbit/sec) device is supported.
+   - For the USB host ports all attached USB devices must be one of the following two options:
+     Low Speed (1.5Mbit/sec) and Full Speed (12Mbit/sec) devices, or
+     High Speed devices (480Mbit/sec)
 
 If a mixture of High Speed and Low/Full speed devices are attached the devices will not operate correctly. This also applies if any hubs are attached to the ports.
 The reason for this limitation is that USB 2.0 split transfers are not supported by the mobile-targeted SoC hardware USB implementation.
@@ -44,7 +54,7 @@ The following are known issues on the current release.
 1. **Not Yet Supported**
    - Expansion bus audio. (At present Bluetooth audio and HDMI are supported)
    - Some video formats are not decoded in Android, and will not be played with the current release.
-HDMI display sometimes goes off when in AOSP.
+   - HDMI display sometimes goes off when in AOSP.
 2. **Apple Bluetooth Keyboards/Mice/Trackpads do not work.**
    - This is under the current investigation.
 3. **Hot plugging an SD card may not work on some UHS class 1 SD cards on AOSP build.**
@@ -57,8 +67,8 @@ HDMI display sometimes goes off when in AOSP.
 
 To report new issues with the Helio please use the [96Boards Bug Tracker](https://bugs.96boards.org).
 
-To view the open bugs, click [here](https://bugs.96boards.org/buglist.cgi?bug_status=__open__&list_id=144&order=Importance&product=HiKey&query_format=specific).  Alternatively go to the [site](https://bugs.96boards.org/), click on the Search menu item, select HiKey in the product dropdown list and click the search button.
+To view the open bugs, click [here](https://bugs.96boards.org/buglist.cgi?bug_status=__open__&list_id=144&order=Importance&product=HiKey&query_format=specific).  Alternatively go to the [site](https://bugs.96boards.org/), click on the Search menu item, select Helio X20 in the product dropdown list and click the search button.
 
-To add a new bug, click [here](https://bugs.96boards.org/enter_bug.cgi?product=HiKey) and fill in the form.  Alternatively go to the [site](https://bugs.96boards.org/), click on the New menu item, then click on Consumer Edition Boards, then click on HiKey, and finally fill in the form.
+To add a new bug, click [here](https://bugs.96boards.org/enter_bug.cgi?product=HiKey) and fill in the form.  Alternatively go to the [site](https://bugs.96boards.org/), click on the New menu item, then click on Consumer Edition Boards, then click on Helio X20, and finally fill in the form.
 
 ***
