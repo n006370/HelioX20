@@ -57,6 +57,7 @@ Step 1. Make a device to enter fastboot mode
     `xflash.exe enter-fastboot “G:\xflash\bin\win\FES\MT6797_Android_scatter.txt”`
 - Then plug in usb to device.
 - Xflash will scan and open device COM port and connect it, download some necessary images to devices, then make device to enter fastboot mode.
+
 Step 2. Run fastboot command script file
 - You need write a download script.
 
