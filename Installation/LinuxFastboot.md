@@ -23,7 +23,9 @@ alps\vendor\mediatek\proprietary\system\core\xflash
 Execute following commands, build system will automatically create FES folder and come out the special lk.bin, where FES store the needed files for xflash download to target befor entering fastboot mode. 
 
 `$ source build/envsetup.sh`
+
 `$ lunch full_amt6797_64_open-eng`
+
 `$ make -j16 PLATFORM_FASTBOOT_EMPTY_STORAGE=yes -k 2>&1 | tee build.log`
 
 Then, you can find a folder named FES.
@@ -55,6 +57,7 @@ Step 1. Make a device to enter fastboot mode
 - Xflash will scan and open device COM port and connect it, download some necessary images to devices, then make device to enter fastboot mode.
 Step 2. Run fastboot command script file
 - You need write a download script.
+
         Such as xflash.sh
         ```shell
         #!/bin/bash
@@ -75,5 +78,5 @@ Step 2. Run fastboot command script file
         fastboot flash cache cache.img
         fastboot flash userdata userdata.img
         fastboot reboot
-        ```
+        
 - Run the download script, download success.
