@@ -13,13 +13,13 @@ The HDMI port on Helio X20 Development Board supports TVs and Monitors with an H
 
 Note also that these modes are preferred and will be tried (in this order) first if they exist in EDID:
 
-| Resolution  | Ratio | Usually on |
+|| Resolution  || Ratio || Usually on ||
 
-| 1920*1080   | 16：9 | TV         |
+|| 1920*1080   || 16：9 || TV         ||
 
-| 1280*720    | 16：9 | TV         |
+|| 1280*720    || 16：9 || TV         ||
 
-| 720*480     | 4：3  | Monitor    |
+|| 720*480     || 4：3  || Monitor    ||
 
 ### USB Ports 
 
