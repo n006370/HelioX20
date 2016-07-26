@@ -11,32 +11,9 @@ Choose and install an operating system on your Helio X20. To appropriately follo
 
 ## Methods of Installation
 
-In most cases, you will be presented with two options when installing your new operating system onto your Helio X20:
+In most cases, you will be presented with one option when installing your new operating system onto your Helio X20:
 
-- SD Card Method
 - Fastboot Method
-
-Each method has it's own benifits, and requires different levels of experience
-
-### SD Card Method
-
-The SD card method allows you to place a microSD card into a Helio X20 to automatically boot and install an operating system onto the eMMC of your board. This method is generally simpler than other methods and should be used by beginners.
-
-This method requires the following hardware:
-
-- Helio X20 with power supply
-- Host machine (Linux, Mac OS X, or Windows)
-- MicroSD card with 4GB or more of storage
-- USB Mouse and/or keyboard
-- HDMI Monitor with full size HDMI cable
-
-Go to the [Downloads page](../Downloads/README.md) to get your SD card image.
-
-Choose host machine
-
-###### This method is not available for the Helio X20
-
-***
 
 ### Fastboot Method
 
