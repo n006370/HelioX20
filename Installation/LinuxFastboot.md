@@ -29,6 +29,7 @@ Execute following commands, build system will automatically create FES folder an
 `$ make -j16 PLATFORM_FASTBOOT_EMPTY_STORAGE=yes -k 2>&1 | tee build.log`
 
 Then, you can find a folder named FES.
+
 PATH: \out\target\product\amt6797_64_open\FES
 
 #### **Prepare your Linux host machine**
