@@ -52,6 +52,7 @@ PATH: \out\target\product\amt6797_64_open\FES
 Step 1. Make a device to enter fastboot mode
 - Prepare special images and corresponding scatter file.
 - Run program in command line mode like this:
+
     `$ sudo ./xflash enter-fastboot "/**/xflash/bin/win/FES/MT6797_Android_scatter.txt"`
 - Then plug in usb to device.
 - Xflash will scan and open device COM port and connect it, download some necessary images to devices, then make device to enter fastboot mode.
@@ -59,9 +60,9 @@ Step 2. Run fastboot command script file
 - You need write a download script.
 
         Such as xflash.sh
-        ```shell
+        
         #!/bin/bash
-            
+        
         fastboot devices
         fastboot flash gpt PGPT
         fastboot flash preloader preloader_amt6797_64_open.bin
