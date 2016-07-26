@@ -9,7 +9,7 @@ Higher performance may be obtained by using forced air (fan) cooling on the Heli
 
 ### HDMI Port
 
-The HDMI port on Helio X20 Development Board supports TVs and Monitors with an HDMI interface at display resolutions of 1920*1080 pixels down to 640*480 pixels. Note that interlaceddisplay modes are not currently supported. The mobile SoC used on the Helio X20 Development Board does not have sufficiently flexible clocking arrangements to support allpossible HDMI timings specified by monitors. 
+The HDMI port on Helio X20 Development Board supports TVs and Monitors with an HDMI interface at display resolutions of 1920*1080 pixels down to 640*480 pixels. Note that interlaced display modes are not currently supported. The mobile SoC used on the Helio X20 Development Board does not have sufficiently flexible clocking arrangements to support allpossible HDMI timings specified by monitors. 
 
 Note also that these modes are preferred and will be tried (in this order) first if they exist in EDID:
 
