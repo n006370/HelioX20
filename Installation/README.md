@@ -22,7 +22,7 @@ Fastboot is supported by the board and can be used for installs. This is for adv
 This method requires the following hardware:
 
 - Helio X20 with power supply
-- Host machine (Linux)
+- Host machine (Linux/Windows)
 - USB to microUSB cable
 - USB Mouse and/or keyboard (not required to perform flash)
 - HDMI Monitor with full size HDMI cable (not required to perform flash)
