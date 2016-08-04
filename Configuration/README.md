@@ -1,7 +1,7 @@
 ## Configuration
 
-Execute unique configuraions to customize your Helio X20 experience
+Execute unique configuraions to customize your MediaTek X20 experience
 
 ## Helpful Configurations
 
-< Insert custom Helio X20 specific configurations here >
+< Insert custom MediaTek X20 specific configurations here >
