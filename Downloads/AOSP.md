@@ -6,7 +6,7 @@
 
 ## SD Card image
 
-Currenty not available...
+Currently unavailable
 
 ***
 
