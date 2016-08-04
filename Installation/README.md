@@ -1,6 +1,6 @@
 # Installation
 
-Choose and install an operating system on your Helio X20. To appropriately follow this installation guide you will need to:
+Choose and install an operating system on your MediaTek X20. To appropriately follow this installation guide you will need to:
 
 - Choose an installation method
 - Download necessary files
@@ -11,7 +11,7 @@ Choose and install an operating system on your Helio X20. To appropriately follo
 
 ## Methods of Installation
 
-In most cases, you will be presented with one option when installing your new operating system onto your Helio X20:
+In most cases, you will be presented with one option when installing your new operating system onto your MediaTek X20:
 
 - Fastboot Method
 
@@ -21,7 +21,7 @@ Fastboot is supported by the board and can be used for installs. This is for adv
 
 This method requires the following hardware:
 
-- Helio X20 with power supply
+- MediaTek X20 with power supply
 - Host machine (Linux/Windows)
 - USB to microUSB cable
 - USB Mouse and/or keyboard (not required to perform flash)
